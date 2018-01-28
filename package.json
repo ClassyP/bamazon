@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ClassyP/bamazon/issues"
   },
-  "homepage": "https://github.com/ClassyP/bamazon#readme"
+  "homepage": "https://github.com/ClassyP/bamazon#readme",
+  "dependencies": {
+    "inquirer": "^5.0.1"
+  }
 }
