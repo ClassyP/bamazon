@@ -1,10 +1,11 @@
-1,Amazon Echo,Electronic,$99 ,343
-2,Instant Pot 7-in-1,Home & Kitchen,$125 ,245
-3,Fire HD Tablets,Electronic,$150 ,452
-4,Sony XB950B1�,Electronic,$75 ,4536
-5,iRobot Roomba,Home & Kitchen,$300 ,564
-6,Kindle Paperwhite,Electronic,$75 ,563
-7,Fire TV Stick,TV & Home,$50 ,6647
-8,Fitbit Flex,Electronic,$80 ,53
-9,ARRIS SURFboard,Electronic,$129 ,5634
-10,OtterBox,Phone Accessories,$99 ,356
+﻿item_id,product_name,department_name,price,stock_quantity
+1,Amazon Echo,Electronic,99,343
+2,Instant Pot 7-in-1,Home & Kitchen,125,245
+3,Fire HD Tablets,Electronic,150,452
+4,Sony XB950B1 ,Electronic,75,4536
+5,iRobot Roomba,Home & Kitchen,300,564
+6,Kindle Paperwhite,Electronic,75,563
+7,Fire TV Stick,TV & Home,50,6647
+8,Fitbit Flex,Electronic,80,53
+9,ARRIS SURFboard,Electronic,129,5634
+10,OtterBox,Phone Accessories,99,356
