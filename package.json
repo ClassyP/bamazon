@@ -1,25 +1,30 @@
 {
   "name": "bamazon",
   "version": "1.0.0",
-  "description": "CLI amazon like app using Node.js and MySQL",
+  "description": "An Amazon-like app that will take in orders from customers and deplete stock from the store's inventory. Powered by MySQL",
   "main": "bamazonCustomer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ClassyP/bamazon.git"
+    "url": "git+https://github.com/bizarrowill/bamazon.git"
   },
-  "author": "",
+  "keywords": [
+    "MySQL"
+  ],
+  "author": "William Robertson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ClassyP/bamazon/issues"
+    "url": "https://github.com/bizarrowill/bamazon/issues"
   },
-  "homepage": "https://github.com/ClassyP/bamazon#readme",
+  "homepage": "https://github.com/bizarrowill/bamazon#readme",
   "dependencies": {
-    "cli-table": "^0.3.1",
     "console.table": "^0.10.0",
+    "inquire": "^0.4.8",
     "inquirer": "^5.0.1",
-    "mysql": "^2.15.0"
+    "mysql": "^2.15.0",
+    "prompt": "^1.0.0",
+    "require": "^2.4.20"
   }
 }

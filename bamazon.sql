@@ -1,27 +1,48 @@
-DROP DATABASE IF EXISTS bamazon;
-CREATE DATABASE bamazon;
+/* Schema for SQL bamazon database/table. */
+DROP DATABASE IF EXISTS bamazon_db;
 
-USE bamazon;
+/* Create database */
+CREATE DATABASE bamazon_db;
+USE bamazon_db;
 
-CREATE TABLE products(
-  item_id INT AUTO_INCREMENT NOT NULL,
-  product_name VARCHAR(45) NOT NULL,
-  department_name VARCHAR(45) NOT NULL,
-  price DECIMAL(10,2) NOT NULL,
-  stock_quantity INT(10) NOT NULL,
-  primary key(item_id)
+/* Create new table with a primary key that auto-increments, and a text field */
+CREATE TABLE products
+(
+  item_id  INTEGER(11) AUTO_INCREMENT NOT NULL,
+  product_name VARCHAR (100) NOT NULL,
+  department_name VARCHAR (100) NOT NULL,
+  price INTEGER (100) NOT NULL,
+  stock_quantity INTEGER (100) NOT NULL,
+  PRIMARY KEY (item_id)
 );
 
-SELECT * FROM products;
+-- Creates new rows
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES ("MacBook Pro", "Electronics", 1800, 5);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Uncharted 4", "Video Games", 49.95, 150),
-  ("DOOM", "Video Games", 59.99, 200),
-  ("Crate of Spam", "Food and Drink", 24.50, 50),
-  ("Cool Shades", "Apparel", 75.00, 5),
-  ("Worn Denim Jeans", "Apparel", 54.25, 35),
-  ("Survival Towel", "Necessities", 42.42, 42),
-  ("Bill and Ted's Excellent Adventure", "Films", 15.00, 25),
-  ("Mad Max: Fury Road", "Films", 25.50, 57),
-  ("Monopoly", "Board Games", 30.50, 35),
-  ("Yahtzee", "Board Games", 19.95, 23);
+VALUES ("AirPods", "Electronics", 170, 10);
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES ("Han Solo", "Funko Pop", 8, 25);
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES ("Luke Skywalker", "Funko Pop", 8, 1);
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES ("12-inch fan", "Home Goods", 25, 10);
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES ("Vacuum", "Home Goods", 200, 5);
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES ("Jordan IX", "Shoes", 140, 3);
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES ("iPhone X", "Electronics", 1100, 11);
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES ("Flamethrower", "The Boring Company", 4999, 0);
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES ("Tesla Model 3", "Electric Cars", 55000, 8);
